@@ -1,4 +1,8 @@
 # Versiebeheer
+
+### Script versie: 0.0.5
+> Veranderingen: Errors opgelost
+
 ### Script versie: 0.0.4
 > Veranderingen: Aanmaken folder "Bestanden"
 
