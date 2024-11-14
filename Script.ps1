@@ -7,5 +7,5 @@ $Variable = Get-Variable
 Clear-Host
 
 New-Item -Path $folder -Name "Bestanden" -ItemType "directory"
-Invoke-WebRequest $vmdk -OutFile $bestanden
+Invoke-WebRequest $vmdk -OutFile $vmdkdownload
 Expand-Archive -LiteralPath $vmdkdownload -DestinationPath $bestanden
