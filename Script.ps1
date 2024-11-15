@@ -8,7 +8,7 @@ $folder = "C:\Users\Codero Admin\Documents\GitHub\ProjectHBO"
 $bestanden = "C:\Users\Codero Admin\Documents\GitHub\ProjectHBO\Bestanden"
 $Variable = Get-Variable
 Clear-Host
-
+#kaas
 #Folder 'Bestanden' aanmaken
 Write-Host Folder genaamd Bestanden aanmaken. -ForegroundColor Cyan 
 Start-Sleep 2
