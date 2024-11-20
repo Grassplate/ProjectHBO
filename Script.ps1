@@ -1,4 +1,4 @@
-#Geef toestemming script met GitHub te delen
+#Geef toestemming script met GitHub te delen (voer handmatig uit)
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 #Variabelen
