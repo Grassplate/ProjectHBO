@@ -15,13 +15,20 @@ Clear-Host
 Write-Host Notepad++ downloaden naar Bestanden. -ForegroundColor Cyan 
 Start-Sleep 2
 Invoke-WebRequest $Notepad++ -OutFile $Notepad++Download
+
+#VMware downloaden
 Write-Host VMware downloaden naar Bestanden. -ForegroundColor Cyan 
 Start-Sleep 2
 Invoke-WebRequest $VMware -OutFile $VMwareDownload
 
+
+
+#Notepad++ installeren
 Write-Host Notepad++ installatie wizzard starten. -ForegroundColor Cyan 
 Start-Sleep 2
 Start-Process -FilePath $Notepad++Download
+
+#VMware installeren
 Write-Host VMware installatie wizzard starten. -ForegroundColor Cyan 
 Start-Sleep 2
 Start-Process -FilePath $VMwareDownload
