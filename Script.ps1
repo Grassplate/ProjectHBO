@@ -24,6 +24,6 @@ Write-Host Ubuntu Server.zip uitpakken in Bestanden. -ForegroundColor Cyan
 Start-Sleep 2
 Expand-Archive -LiteralPath $vmdkdownload -DestinationPath $bestanden
 
-Install-Module -Name VMware.PowerCLI
+Install-Module -Name VMware.PowerCLI -Scope CurrentUser
 
 New-VM -Name 'TestVM' –VMHost 'VMHost-1' -Datastore 'TestDatastore' -DiskGB 40 -MemoryGB 8 -NumCpu 2 -NetworkName 'Virtual Machine Network'
