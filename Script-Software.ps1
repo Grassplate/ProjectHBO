@@ -11,9 +11,17 @@ $bestanden = "C:\Users\Codero Admin\Documents\GitHub\ProjectHBO\Bestanden"
 $Variable = Get-Variable
 Clear-Host
 
+#Notepad++ downloaden
+Write-Host Notepad++ downloaden naar Bestanden. -ForegroundColor Cyan 
 Start-Sleep 2
 Invoke-WebRequest $Notepad++ -OutFile $Notepad++Download
+Write-Host VMware downloaden naar Bestanden. -ForegroundColor Cyan 
+Start-Sleep 2
 Invoke-WebRequest $VMware -OutFile $VMwareDownload
 
+Write-Host Notepad++ installatie wizzard starten. -ForegroundColor Cyan 
+Start-Sleep 2
 Start-Process -FilePath $Notepad++Download
+Write-Host VMware installatie wizzard starten. -ForegroundColor Cyan 
+Start-Sleep 2
 Start-Process -FilePath $VMwareDownload
