@@ -8,14 +8,17 @@ $folder = "C:\Users\Codero Admin\Documents\GitHub\ProjectHBO"
 $bestanden = "C:\Users\Codero Admin\Documents\GitHub\ProjectHBO\Bestanden"
 $Variable = Get-Variable
 Clear-Host
+
 #Folder 'Bestanden' aanmaken
 Write-Host Folder genaamd Bestanden aanmaken. -ForegroundColor Cyan 
 Start-Sleep 2
 New-Item -Path $folder -Name "Bestanden" -ItemType "directory"
+
 #Ubuntu Server.zip downloaden
 Write-Host Ubuntu Server.zip downloaden naar Bestanden. Dit kan enkele minuten duren afhankelijk van de internetsnelheid. -ForegroundColor Cyan 
 Start-Sleep 2
 Invoke-WebRequest $vmdk -OutFile $vmdkdownload
+
 #Ubuntu Server.zip uitpakken
 Write-Host Ubuntu Server.zip uitpakken in Bestanden. -ForegroundColor Cyan 
 Start-Sleep 2
