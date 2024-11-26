@@ -26,3 +26,4 @@ Expand-Archive -LiteralPath $vmdkdownload -DestinationPath $bestanden
 
 Install-Module -Name VMware.PowerCLI -Scope CurrentUser
 
+Find-Module -Name VMware.PowerCLI
