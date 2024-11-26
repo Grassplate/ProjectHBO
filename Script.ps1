@@ -6,6 +6,7 @@ $vmdk = "https://www.dropbox.com/scl/fi/b23m07lcqkn0k62lfs2n8/Ubuntu-Server-24.0
 $vmdkdownload = 'C:\Users\Codero Admin\Documents\GitHub\ProjectHBO\Bestanden\Ubuntu-Server-24.04-64bit.zip'
 $folder = "C:\Users\Codero Admin\Documents\GitHub\ProjectHBO"
 $bestanden = "C:\Users\Codero Admin\Documents\GitHub\ProjectHBO\Bestanden"
+$vmware = "C:\Program Files (x86)\VMware\VMware Workstation\"
 $Variable = Get-Variable
 Clear-Host
 
@@ -28,8 +29,11 @@ Install-Module -Name VMware.PowerCLI -Scope CurrentUser
 
 Find-Module -Name VMware.PowerCLI
 
-cd "C:\Program Files (x86)\VMware\VMware Workstation\"
+cd $vmware
 
-.\vmcli.exe --help
+
+.\vmcli.exe VM Create -n test -d $bestanden -g ubuntu-64
+
+
 
 
