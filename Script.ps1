@@ -27,3 +27,9 @@ Expand-Archive -LiteralPath $vmdkdownload -DestinationPath $bestanden
 Install-Module -Name VMware.PowerCLI -Scope CurrentUser
 
 Find-Module -Name VMware.PowerCLI
+
+cd "C:\Program Files (x86)\VMware\VMware Workstation\"
+
+.\vmcli.exe --help
+
+
