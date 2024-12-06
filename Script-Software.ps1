@@ -44,4 +44,13 @@ Start-Sleep 2
 Invoke-WebRequest -Uri $vagrantUrl -OutFile $vagrantOutput
 Invoke-WebRequest -Uri $vmwareUtilityUrl -OutFile $vmwareUtilityOutput
 
-Write-Host Downloads completed! -ForegroundColor Cyan
+#Install Vargant
+Write-Host Install Vagrant. -ForegroundColor Cyan
+Start-Sleep 2
+Start-Process -FilePath $vagrantOutput
+
+#Install VMwareUtility
+Write-Host Install VMwareUtility. -ForgroundColor Cyan
+Start-Sleep 2
+Start-Process -Filepath $vmwareUtilityOutput
+
